@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ilanga Nature</title>
+
+    <link rel="stylesheet" href="./styles/main.css" />
+
+    <!--  FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body id="top">
+    <a href="#top" class="scrollToTop hide" id="scrollToTop">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+    <!--  Header du site  -->
+    <header class="hideMenu">
+      <div class="background"></div>
+      <div class="container">
+        <div class="logo">
+          <a href="./index.html">
+            <img
+              src="./assets/logo_ilanga_nature.png"
+              alt="Logo Ilanga Nature"
+            />
+          </a>
+        </div>
+        <nav>
+          <div class="top">
+            <div class="left">
+              <button class="btn btn-1" id="hamburger" title="Ouvrir le menu">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+              <button class="btn btn-3" title="Recherche">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+              <div class="contact">
+                <span>Contact</span>
+                <div class="dot"></div>
+                <a
+                  target="_blank"
+                  href="https://www.facebook.com/IlangaNature"
+                  title="Facebook"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+                <a
+                  target="_blank"
+                  href="https://twitter.com/IlangaNature?fbclid=IwAR30hW_1qNJF23QdCPU4D--0Bqogc_GPy6lIsPMl0tY61dgZk6vyfZ_h2KQ"
+                  title="Twitter"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/company/ilanga-nature/mycompany/"
+                  title="Linkedin"
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+                <a
+                  target="_blank"
+                  href="https://www.youtube.com/channel/UCLEeV1DlJ4nCf9VRRCmGyNg"
+                  title="Youtube"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/ilanganature/"
+                  title="Instagram"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+            <div class="right">
+              <a href="#" title="Mon compte"
+                ><i class="fa-solid fa-user account"></i
+              ></a>
+              <div class="dot"></div>
+              <a class="btn btn-2" href="#" title="Mon panier"
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></a>
+              <form action="./">
+                <select onchange="this.form.submit()" name="lang" id="language">
+                  <option selected value="fr">FR</option>
+                  <option value="en">EN</option>
+                  <option value="es">NL</option>
+                </select>
+              </form>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="logo-ilanga">
+              <a href="./index.html">
+                <img
+                  src="./assets/logo_ilanga_nature.png"
+                  alt="Logo Ilanga Nature"
+                />
+              </a>
+            </div>
+            <ul class="menu">
+              <li>
+                <a class="selector" href="">
+                  <span>Miels</span>
+                  <i class="fa-solid fa-angle-right more"></i>
+                  <ul class="sub-menu">
+                    <li><a href="#" title="Bocaux">140 Gr</a></li>
+                    <li class="border-left">
+                      <a href="#" title="Format XL">250 Gr</a>
+                      <li class="border-left">
+                      <a href="#" title="Format XL">900 Gr</a>
+                      <li class="border-left">
+                      <a href="#" title="Format XL">5 Kg</a>
+                      <li class="border-left">
+                      <a href="#" title="Format XL">28 Kg</a>
+                    </li>
+                  </ul>
+                </a>
+              </li>
+              <li class="border-left">
+                <a class="selector" href="">
+                  <span>Epices</span>
+                  <i class="fa-solid fa-angle-right more"></i>
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="#" title="Vanille">Vanille</a>
+                    </li>
+                    <li class="border-left">
+                      <a href="#" title="Epices Classiques"
+                        >Epices Classiques</a
+                      >
+                    </li>
+                    <li class="border-left">
+                      <a href="#" title="Epices Découvertes"
+                        >Epices Découvertes</a
+                      >
+                    </li>
+                    <li class="border-left">
+                      <a href="#" title="Epices Format Familial"
+                        >Epices Format Familial</a
+                      >
+                    </li>
+                  </ul>
+                </a>
+              </li>
+              <li class="border-left">
+                <a href="#" title="Confitures">Confitures</a>
+              </li>
+
+              <li class="border-left">
+                <a class="selector" href="">
+                  <span>Sels</span>
+                  <i class="fa-solid fa-angle-right more"></i>
+                  <ul class="sub-menu">
+                    <li><a href="#" title="Fleur de Sel">Fleur de Sel</a></li>
+                    <li class="border-left">
+                      <a href="#" title="Gros Sels">Gros Sels</a>
+                    </li>
+                  </ul>
+                </a>
+              </li>
+
+              <li class="border-left">
+                <a class="selector" href="">
+                  <span>Sucre et cafe</span>
+                  <i class="fa-solid fa-angle-right more"></i>
+                  <ul class="sub-menu">
+                    <li><a href="#" title="Sucre">Sucre</a></li>
+                    <li class="border-left">
+                      <a href="#" title="Café">Café</a>
+                    </li>
+                  </ul>
+                </a>
+              </li>
+
+              <li class="border-left">
+                <a class="selector" href="">
+                  <span>Coffrets</span>
+                  <i class="fa-solid fa-angle-right more"></i>
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="#" title="Coffrets Vintage">Coffrets Vintage</a>
+                    </li>
+                    <li class="border-left"><a href="#" title="Box">Box</a></li>
+                  </ul>
+                </a>
+              </li>
+
+              <li class="border-left bio">
+                <a class="selector" href="">
+                  <span>Bio <i class="fa-solid fa-leaf"></i></span>
+                  <i class="fa-solid fa-angle-right more"></i>
+                  <ul class="sub-menu">
+                    <li><a href="#" title="Nos Miels Bio">Nos Miels Bio</a></li>
+                    <li>
+                      <a href="#" title="Nos Confitures Bio"
+                        >Nos Confitures Bio</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" title="Nos Epices Bio">Nos Epices Bio</a>
+                    </li>
+                  </ul>
+                </a>
+              </li>
+
+              <li class="border-left">
+                <a href="#" title="Partenaires">Partenaires</a>
+              </li>
+
+              <li class="border-left">
+                <a href="#" title="Presse">Presse</a>
+              </li>
+
+              <li class="border-left">
+                <a href="#" title="Certification">Certification</a>
+              </li>
+
+              <li class="a-propos">
+                <a href="#" title="A Propos">A Propos</a>
+              </li>
+            </ul>
+            <div class="contact">
+              <span>Contact</span>
+              <div class="dot"></div>
+              <a
+                target="_blank"
+                href="https://www.facebook.com/IlangaNature"
+                title="Facebook"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a
+                target="_blank"
+                href="https://twitter.com/IlangaNature?fbclid=IwAR30hW_1qNJF23QdCPU4D--0Bqogc_GPy6lIsPMl0tY61dgZk6vyfZ_h2KQ"
+                title="Twitter"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/company/ilanga-nature/mycompany/"
+                title="Linkedin"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+              <a
+                target="_blank"
+                href="https://www.youtube.com/channel/UCLEeV1DlJ4nCf9VRRCmGyNg"
+                title="Youtube"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+              <a
+                target="_blank"
+                href="https://www.instagram.com/ilanganature/"
+                title="Instagram"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+            <div class="language"></div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    </footer>
+      <!--  Contenu principale du site  -->
+      <main>
+      <!--  Hero: Attrape regard  -->
+      <div class="hero">
+        <video autoplay muted playsinline autobuffer loop>
+          <source src="./videos/video_hero.webm" type="video/webm" />
+          <source src="./videos/video_hero.mp4" type="video/mp4" />
+          <source
+            src="./videos/video_hero_original_size.mp4"
+            type="video/mp4"
+          />
+          Votre navigateur ne prend pas en charge les vidéos intégrées.
+        </video>
+        <a
+          target="_blank"
+          href="https://www.youtube.com/channel/UCLEeV1DlJ4nCf9VRRCmGyNg"
+          title="Youtube"
+          ><i class="fa-brands fa-youtube"></i> Ilanga Nature<i
+            class="fa-solid fa-angle-right more"
+          ></i
+        ></a>
+        <div class="content">
+          <p class="title">Pack<br />Summer Confitures</p>
+          <div class="buttons">
+            <button>Découvrir</button>
+            <button>Acheter</button>
+          </div>
+        </div>
+      </div>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
